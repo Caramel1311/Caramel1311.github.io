@@ -2,6 +2,8 @@
 
 colours / background can be changed according to your preference */
 
+```
+
   @import url('https://caramel1311.github.io/serverlisttheme.css');
 
 :root {
@@ -29,3 +31,5 @@ colours / background can be changed according to your preference */
     --spectate-background-color: #00000030; /* color for spectating map background, transparency is applicable */
     --spectate-leaderboard-highlighting-color: #e6f7ff; /* player highlight color in leaderboard */
 }
+
+```
