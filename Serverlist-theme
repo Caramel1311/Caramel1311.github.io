@@ -1,0 +1,209 @@
+/*Customizable SL+ theme: change the hex codes under "root"*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+b /* "Total", "Serverlist" text and System info (e.g "Mode" "ECP Count)*/ {
+    color: var(--textcolour1); 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.bg-dark /* All "?" symbols */ {
+    background-color: var(--miscbuttons)!important;
+}
+.bg-dark:hover{
+    opacity: 0.7;
+}
+
+body /*Main body of theme*/ {
+    color: var(--textcolour1);
+    font-family: 'Patrick Hand SC';
+    background-image: var(--backgroundimgurl);
+    background-color: var(--backgroundcolour);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn:focus {
+    outline-style: none;
+    box-shadow: none;
+}
+
+.btn-danger /* "Search" magnifying glass icon */ {
+    color: var(--titlescolour);
+    text-shadow: 0px 0px 4px var(--titlesglow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+}
+.btn-danger:hover {
+    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-color: transparent;
+}
+
+.btn-outline-danger /* "Share custom game", "Join game", "Copy" and "info" buttoms */ {
+    color: var(--titlescolour);
+    text-shadow: 0px 0px 4px var(--titlesglow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+}
+.btn-outline-danger:hover {
+    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    opacity: 0.9;
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.btn-outline-success /*"Custom theme" button*/ {
+    color: var(--titlescolour);
+    text-shadow: 0px 0px 4px var(--titlesglow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+}  
+.btn-outline-success:hover {
+    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.card /*System info cards*/ {
+    font-family: 'Patrick Hand SC', 'sans-serif';
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+}
+.card:hover{
+    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    border-color: var(--highlights)!important;
+    border-width: 3px!important;
+    box-shadow:
+      0px 0px 8px var(--highlights);
+}
+
+.form-check-input:checked /* Check marks on settings panel */ {
+    background-color: var(--miscbuttons);
+    border-color: var(--miscbuttons);
+}
+.form-check-input:hover {
+  	opacity: 0.8;
+}
+
+h3 /*System name*/ {
+    color: var(--titlescolour);
+    text-shadow: 0px 0px 4px var(--titlesglow);
+    font-size: 32px!important;
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC'!important;
+    font-weight: bold; 
+    letter-spacing: 2px;
+}
+
+h5 /*Titles on settings panel*/ {
+    color: var(--titlescolour);
+    text-shadow: 0px 0px 4px var(--titlesglow);
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC'!important;
+    font-weight: bold; 
+    letter-spacing: 0.5px;
+    border-bottom: solid 3px #ffffff;
+    padding: 2px;
+}
+
+i /* System info text (e.g "Team Mode" "0 crimes"*/ {
+    color: var(--textcolour2); 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+label /* Settings panel sub-text*/ {
+    color: var(--textcolour2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.modal-content /* Custom theme editor pop-up*/ {
+    background-image: linear-gradient(150deg, var(--colour1)  0%, var(--colour2) 100%);
+}
+
+.navbar-brand /* ServerList logo */ {
+    font-size: 28px;
+    font: 'Patrick Hand SC';
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    padding: 0px 50px;
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link /* External links */ {
+    color: transparent;
+    text-shadow: none;
+} 
+
+.player-view-box > * /* Player list on info pop-up*/ {
+    font-size:0.9em!important;
+}
+
+.popover-body /* All pop-ups */{
+  	color: var(--textcolour) !important;
+	font-family:"Patrick Hand SC";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+	background-image: linear-gradient(150deg, var(--colour1)  0%, var(--colour2) 100%);
+  	border: 2px solid var(--highlights)
+}  
+
+#settingsPanel, #viewOptions /*Settings panel*/ {
+    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-color: transparent;
+    border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
+    border-style: solid;
+    border-width: 3px;
+    padding: 18px 18px;
+    border-radius: 12px;
+    max-height: 20%;
+}
+
+.ship-icon /*Player list ship icons*/ {
+    filter: saturate(0.5) brightness(1.5);
+}
