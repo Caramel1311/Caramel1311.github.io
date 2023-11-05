@@ -1,6 +1,4 @@
-/*Customizable SL+ theme: change the hex codes under "root"*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 *:not(.CodeMirror, .CodeMirror *, textarea, .ship-icon) {
     font-family: var(--fontfamily) !important;
@@ -29,9 +27,6 @@ body /*Main body of theme*/ {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-body::-webkit-scrollbar {
-    display: none;
 }
 
 .btn:focus {
@@ -96,6 +91,9 @@ body::-webkit-scrollbar {
     border-style: solid;
     border-width: 3px;
 }
+canvas /* playerlist map */{
+    border-radius: 12px;
+}
 
 .card /*System info cards*/ {
     font-size: 20px;
@@ -152,13 +150,15 @@ label /* Settings panel sub-text*/ {
     font-size: 16px;
 }
 
+.modal-body /* Custom theme popup, Settings menu */{
+    font-size: 20px;
+}
+
 .modal-content /* Custom theme editor pop-up*/ {
     background-image: linear-gradient(150deg, var(--colour1)  0%, var(--colour2) 100%);
 }
-
-.navbar {
-    --bs-navbar-brand-color: var(--textcolour);
-    --bs-navbar-brand-hover-color: var(--highlights);
+.modal-content::-webkit-scrollbar {
+    display: none!important;
 }
 
 .navbar-brand /* ServerList logo */ {
@@ -172,17 +172,26 @@ label /* Settings panel sub-text*/ {
     border-radius: 12px;
 }
 
-.navbar-light .navbar-nav .nav-link /* External links */ {
-    color: transparent;
-    text-shadow: none;
-} 
+.navbar /* top navbar */{
+    --bs-navbar-brand-color: var(--textcolour);
+    --bs-navbar-brand-hover-color: var(--textcolour);
+}
 
-.nav-link:hover {
+.nav-link:hover, .navbar-brand:hover /* icons */{
     color: var(--highlights);
 }
 
-.player-view-box > * /* Player list on info pop-up*/ {
-    font-size:0.9em!important;
+.navbar-brand:hover /* Serverlist logo */:
+    color: var(--highlights)!important;
+}
+
+pan.float-start > img {
+    width: 2.4rem!important;
+    height: 1.2rem!important;
+}
+
+.player-view-box /* Player list on info pop-up*/ {
+    font-size:1.2rem!important;
 }
 
 .popover-body /* All pop-ups */{
@@ -218,5 +227,6 @@ label /* Settings panel sub-text*/ {
 }
 
 .ship-icon /*Player list ship icons*/ {
-    filter: saturate(0.3) brightness(2.5);
+    filter: invert(0.35) brightness(1.5) !important;
 }
+
