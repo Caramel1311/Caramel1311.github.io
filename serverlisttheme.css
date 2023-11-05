@@ -45,14 +45,17 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 16px;
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
     border-width: 3px;
 }
 .btn-danger:hover {
-    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-image: var(--cardbackgroundhover);
     background-color: transparent;
 }
 
@@ -62,14 +65,17 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 16px;
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
     border-width: 3px;
     border-radius: 12px;
 }
 .btn-outline-danger:hover {
-    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-image: var(--cardbackgroundhover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     opacity: 0.9;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
@@ -83,14 +89,20 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 16px;
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
     border-width: 3px;
     border-radius: 12px;
 }  
 .btn-outline-success:hover {
-    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-image: var(--cardbackgroundhover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
@@ -107,7 +119,10 @@ canvas /* map */{
 
 .card /*System info cards*/ {
     font-size: 20px;
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
@@ -115,7 +130,10 @@ canvas /* map */{
     border-radius: 12px;
 }
 .card:hover{
-    background-image: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
+    background-image: var(--cardbackgroundhover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-color: var(--highlights)!important;
     border-width: 3px!important;
     box-shadow:
@@ -172,7 +190,10 @@ label /* Settings panel sub-text*/ {
 
 .navbar-brand /* ServerList logo */ {
     font-size: 28px;
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 0px 50px;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
@@ -204,7 +225,10 @@ label /* Settings panel sub-text*/ {
 }  
 
 #settingsPanel, #viewOptions /*Settings panel*/ {
-    background-image: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    background-image: var(--cardbackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: transparent;
     border-color: var(--bordercolour1) var(--bordercolour2) var(--bordercolour2) var(--bordercolour1);
     border-style: solid;
