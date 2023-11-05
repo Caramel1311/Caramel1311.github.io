@@ -159,6 +159,7 @@ label /* Settings panel sub-text*/ {
 .navbar {
     --bs-navbar-brand-color: var(--textcolour);
     --bs-navbar-brand-hover-color: var(--highlights);
+}
 
 .navbar-brand /* ServerList logo */ {
     font-size: 28px;
@@ -217,5 +218,5 @@ label /* Settings panel sub-text*/ {
 }
 
 .ship-icon /*Player list ship icons*/ {
-    filter: saturate(0.5) brightness(1.5);
+    filter: saturate(0.3) brightness(2.5);
 }
