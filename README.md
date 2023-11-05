@@ -3,7 +3,6 @@
 colours / background can be changed according to your preference */
 
 ```
-
   @import url('https://caramel1311.github.io/serverlisttheme.css');
 
 :root {
@@ -18,6 +17,8 @@ colours / background can be changed according to your preference */
     --highlights: #ffffff; /*button outlines*/
     --backgroundimgurl: url(" "); /* background img, leave blank to use solid colour */
     --backgroundcolour: #133c69;
+    --fontfamily: 'Patrick Hand SC';
+    --fontweight: bold;
   
     --titlescolour: #ffffff; /* colour of all headings */
     --titlesglow: #ffffff30; /* text shadow/glow of headings */
