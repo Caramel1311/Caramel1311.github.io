@@ -99,6 +99,10 @@ body::-webkit-scrollbar {
 
 canvas /* map */{
     border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .card /*System info cards*/ {
@@ -158,6 +162,7 @@ label /* Settings panel sub-text*/ {
 
 .modal-content /* Custom theme editor pop-up*/ {
     background-image: linear-gradient(150deg, var(--colour1)  0%, var(--colour2) 100%);
+    padding: 10px 10px;
 }
 
 .navbar {
@@ -222,5 +227,5 @@ label /* Settings panel sub-text*/ {
 }
 
 .ship-icon /*Player list ship icons*/ {
-    filter: invert(0.35) brightness(1.4);
+    filter: invert(0.35) brightness(1.5);
 }
