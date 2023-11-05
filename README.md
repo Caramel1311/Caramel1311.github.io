@@ -31,6 +31,11 @@ colours / background can be changed according to your preference */
     --spectate-asteroids-color: #d1f0ff; /* color for the asteroids */
     --spectate-background-color: #00000030; /* color for spectating map background, transparency is applicable */
     --spectate-leaderboard-highlighting-color: #e6f7ff; /* player highlight color in leaderboard */
+
+/* ADVANCED SETTINGS - DO NOT TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING */
+
+    --cardbackground: linear-gradient(150deg, var(--boxcolour1), var(--boxcolour2));
+    --cardbackgroundhover: linear-gradient(150deg, var(--boxhovercolour1), var(--boxhovercolour2));
 }
 
 ```
